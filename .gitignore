@@ -6,6 +6,7 @@ __pycache__/
 *.h5
 *.loom
 *.mtx
+*.tar.gz
 
 # OS/editor noise
 .DS_Store

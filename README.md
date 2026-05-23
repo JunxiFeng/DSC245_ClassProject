@@ -14,6 +14,26 @@ The file appears to be a processed single-cell perturbation dataset prepared for
 
 The file size is approximately `1.14 GB`.
 
+## Data Download
+
+The dataset can be downloaded from PerturBase:
+
+- `http://www.perturbase.cn/static/UPR_Perturb_seq/UPR_Perturb_seq.filter.tar.gz`
+
+The notebook includes cells that can download and extract this archive automatically. If you want to fetch it manually, run:
+
+```bash
+mkdir -p data
+curl -L "http://www.perturbase.cn/static/UPR_Perturb_seq/UPR_Perturb_seq.filter.tar.gz" -o data/UPR_Perturb_seq.filter.tar.gz
+tar -xzf data/UPR_Perturb_seq.filter.tar.gz -C data
+```
+
+After extraction, the notebook looks for `mixscape_hvg_filter.h5ad` in:
+
+- the project root
+- `data/`
+- nested folders inside `data/`
+
 ## Environment Setup
 
 To explore the data and run the notebook, install the Python packages listed in `requirements.txt`.

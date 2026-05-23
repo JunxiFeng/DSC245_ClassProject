@@ -1,0 +1,11 @@
+__pycache__/
+.ipynb_checkpoints/
+
+# Large local data files
+*.h5ad
+*.h5
+*.loom
+*.mtx
+
+# OS/editor noise
+.DS_Store
